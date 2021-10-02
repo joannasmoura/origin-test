@@ -1,0 +1,43 @@
+$primary-color: #1B31A8;
+$title-color: #1E2A32;
+$subtitle-color: #708797;
+$secondary-color:#0079FF;
+$phone: 640px;
+$tablet: 768px; 
+$desktop: 1024px;
+
+@font-face {
+  font-family: 'WorkSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('WorkSans'), url(./fonts/work-sans-v11-latin-regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('WorkSans'), url(./fonts/work-sans-v11-latin-500.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('WorkSans'), url(./fonts/work-sans-v11-latin-600.woff) format('woff');
+}
+
+body {
+  margin: 0;
+  font-family: WorkSans, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F4F8FA;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

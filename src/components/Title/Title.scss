@@ -1,0 +1,15 @@
+@import '../../index.scss';
+
+.title {
+    font-size: 20px;
+    color:$primary-color;
+    @media screen and (max-width: $phone) {
+        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+    @media screen and (min-width: $tablet) {
+        margin-top: 48px;
+        margin-bottom: 24px;
+    }
+    
+}

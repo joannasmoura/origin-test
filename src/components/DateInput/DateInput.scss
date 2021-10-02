@@ -1,0 +1,51 @@
+@import '../../index.scss';
+@import '../FormComponent/FormComponent.scss';
+
+.date-input-container{
+    @media screen and (max-width: $phone) {
+        width: 94%;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 192px;
+        grid-area: 1 / 2 / 2 / 3;
+    }
+}
+
+.date-input {
+    height: 56px;
+    border: 1px solid #E9EEF2;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    margin-top: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    @media screen and (max-width: $phone) {
+        width:100%;
+    }
+}
+
+.button-text{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    display:grid;
+}
+
+.month{
+    font-weight: 600;
+    color: #1E2A32;
+}
+
+.year{
+    color: #8A9CA9;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 14px;
+    margin-top:20px;
+}

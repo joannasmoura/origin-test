@@ -1,0 +1,27 @@
+@import '../../index.scss';
+@import '../FormComponent/FormComponent.scss';
+
+.amount-input-container{
+    @media screen and (max-width: $phone) {
+        width: 80%;
+    }
+    @media screen and (min-width: $tablet) {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 272px;
+    }
+}
+
+.input {
+    height: 56px;
+    border: 1px solid #E9EEF2;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    margin-top: 4px;
+    background: url(../../assets/icons/money-icon.svg) no-repeat scroll 15px 15px;
+    padding-left:45px;
+    font-size: 20px;
+    font-weight: 500;
+    @media screen and (max-width: $phone) {
+        width:100%;
+    }
+}

@@ -1,0 +1,17 @@
+@import '../../index.scss';
+
+.button-container {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.button {
+    border-radius: 32px;
+    background-color: $primary-color;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    height: 56px;
+    border:none;
+}

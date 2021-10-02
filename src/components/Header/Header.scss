@@ -1,0 +1,22 @@
+@import '../../index.scss';
+
+.header {
+    background-color: white;
+    width: 100%;
+    @media screen and (max-width: $phone) {
+        height: 56px;
+    }
+    @media screen and (min-width: $tablet) {
+        height: 80px;
+    }
+}
+
+.logo {
+    float: left;
+    @media screen and (max-width: $phone) {
+        margin: 16px 16px 16px 16px;
+    }
+    @media screen and (min-width: $tablet) {
+        margin: 24px 24px 24px 56px;
+    }
+}
