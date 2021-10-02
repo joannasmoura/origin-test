@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { setAmount } from '../../features/counter/amountSlice';
+import { setAmount } from '../../features/amount/amountSlice';
 import './AmountInput.scss';
 
 const AmountInput = () => {

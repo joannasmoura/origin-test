@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { months } from '../../utils';
 import { useDispatch } from 'react-redux';
-import { setDate } from '../../features/counter/amountSlice';
+import { setDate } from '../../features/amount/amountSlice';
 import './DateInput.scss';
 import {ReactComponent as ChevronLeft} from '../../assets/icons/chevron-left.svg';
 import {ReactComponent as ChevronRight} from '../../assets/icons/chevron-right.svg';
@@ -15,7 +15,7 @@ const DateInput = () => {
 
   useEffect(() => {
     dispatch(setDate({month, year}));
-  }, [month, year])
+  }, [month, year, dispatch])
 
   const nextMonth = () => {
     if(month < 11){
@@ -27,7 +27,18 @@ const DateInput = () => {
   }
 
   const previousMonth = () => {
-    if(month !== currentMonth){
+    let canGoPrevious = false
+    if(year !== currentYear){
+      canGoPrevious = true;
+    } else {
+      if(month !== currentMonth){
+        canGoPrevious = true;
+      } else {
+        canGoPrevious = false;
+      }
+    }
+
+    if(canGoPrevious){
       if(month > 0){
         setMonth(month-1);
       } else {
